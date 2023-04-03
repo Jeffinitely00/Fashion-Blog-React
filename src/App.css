@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  border-left-width: 10px;
+  border-left-color: tomato;
+  border-left-style: solid;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
   min-height: 100vh;
+  font-family: sans-serif;
+  max-width: 1000px;
+  margin: auto;
+}
+
+header,
+main,
+footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+h1 {
+  color: tomato;
+  font-size: 100px;
+  font-weight: lighter;
+  font-family: helvetica;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.top-nav {
+  list-style-type: none;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 60px;
+  font-size: x-large;
+}
+
+.top-nav a {
+  color: darkgray;
+}
+
+.bottom-nav {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-nav a {
+  color: tomato;
+}
+
+h3 {
+  font-size: 50px;
+  font-weight: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: helvetica;
+}
+
+.display-flex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.continue {
+  color: tomato;
+  font-weight: bolder;
+  font-size: larger;
+  text-decoration: none;
+}
+
+article {
+  margin-bottom: 4rem;
+  border-bottom: 1px;
+  border-bottom: solid;
+  border-bottom-color: lightgray;
+  padding-bottom: 2rem;
+}
+
+p::first-letter {
+  font-weight: lighter;
+  color: rgba(87, 87, 94, 0.918);
+  /* initial-letter: 4; (per error, initial-letter is not supported by Chrome , Edge, etc...*/
+  font-family: Helvetica;
+  float: left;
+  font-size: 6em;
+  line-height: 0.5em;
+  padding-bottom: 0.3em;
+  padding-top: 0.2em;
+  padding-right: 0.3em;
+}
+
+.copyright {
+  color: darkgray;
+}
+
+h2 {
+  margin-top: 30;
+  margin-bottom: 30px;
+  font-family: helvetica;
+  font-weight: lighter;
+  font-size: 40px;
+}
+
+time {
+  font-size: 40px;
+  color: darkgray;
+  font-weight: lighter;
+  padding-bottom: 100px;
+}
+
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgba(87, 87, 94, 0.918);
+  padding-top: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  line-height: 32px;
+  font-size: x-large;
 }
